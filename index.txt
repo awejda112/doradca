@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrzej Wejda - Doradztwo prawne i księgowość w Veghel. Skontaktuj się z nami!">
+    <title>Andrzej Wejda - Doradztwo Prawne i Księgowość</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('prawnik.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        header {
+            background-color: rgba(0, 115, 230, 0.9);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: rgba(0, 115, 230, 0.9);
+            color: white;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Andrzej Wejda</h1>
+        <p>Doradztwo Prawne i Księgowość</p>
+    </header>
+    <main>
+        <section>
+            <h2>O mnie</h2>
+            <p>Nazywam się Andrzej Wejda i od lat zajmuję się doradztwem prawnym oraz księgowością. Moim celem jest zapewnienie klientom wsparcia w sprawach prawnych i finansowych, z pełnym zaangażowaniem i profesjonalizmem. Jeśli szukasz rzetelnej pomocy, zapraszam do kontaktu!</p>
+        </section>
+        <section>
+            <h2>Kontakt</h2>
+            <p><strong>Adres:</strong> Barbarahoeve 13, Veghel, 5463 LA</p>
+            <p><strong>Numer telefonu:</strong> <a href="tel:+31645509000">+31645509000</a></p>
+            <p><strong>E-mail:</strong> <a href="mailto:awejda112@proton.me">awejda112@proton.me</a></p>
+        </section>
+        <section>
+            <h2>Napisz do mnie</h2>
+            <form action="mailto:awejda112@proton.me" method="post" enctype="text/plain">
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Twój e-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Wyślij wiadomość</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Andrzej Wejda. Wszystkie prawa zastrzeżone. | <a href="https://www.facebook.com/andrzej.wejda.9" target="_blank">Odwiedź mnie na Facebooku</a></p>
+    </footer>
+</body>
+</html>
