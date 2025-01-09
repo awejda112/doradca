@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi Prawnicze i Księgowe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 20px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service-box {
+            width: 30%;
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .service-box:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #34495e;
+        }
+        .contact-section {
+            display: flex;
+            justify-content: space-around;
+        }
+        .contact-info {
+            width: 40%;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .contact-info h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Nagłówek -->
+    <header>
+        <h1>Usługi Prawnicze i Księgowe</h1>
+        <p>Profesjonalna obsługa prawna i księgowa dla firm i osób prywatnych</p>
+    </header>
+
+    <!-- Menu nawigacyjne -->
+    <nav>
+        <a href="#prawo">Usługi Prawne</a>
+        <a href="#ksiegowosc">Usługi Księgowe</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <!-- Sekcja usług prawniczych -->
+    <section id="prawo">
+        <h2>Usługi Prawne</h2>
+        <p>Oferujemy szeroki zakres usług prawnych zarówno dla osób prywatnych, jak i firm. Nasza kancelaria specjalizuje się w:</p>
+        <div class="services">
+            <div class="service-box">
+                <h3>Prawo cywilne</h3>
+                <p>Pomoc w sprawach związanych z umowami, odszkodowaniami, spadkami, rozwodami i podziałem majątku.</p>
+            </div>
+            <div class="service-box">
+                <h3>Prawo pracy</h3>
+                <p>Obsługa prawna pracowników i pracodawców w zakresie prawa pracy, umów o pracę, zwolnień i spraw sądowych.</p>
+            </div>
+            <div class="service-box">
+                <h3>Prawo gospodarcze</h3>
+                <p>Obsługa prawna firm, w tym zakładanie spółek, negocjowanie umów, a także reprezentacja w sporach gospodarczych.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja usług księgowych -->
+    <section id="ksiegowosc">
+        <h2>Usługi Księgowe</h2>
+        <p>Oferujemy pełną obsługę księgową dla małych, średnich i dużych firm, a także dla osób prowadzących działalność gospodarczą:</p>
+        <div class="services">
+            <div class="service-box">
+                <h3>Pełna księgowość</h3>
+                <p>Zajmujemy się pełną obsługą księgową firm, w tym prowadzeniem ksiąg rachunkowych, rozliczeniami VAT i PIT.</p>
+            </div>
+            <div class="service-box">
+                <h3>Rozliczenia podatkowe</h3>
+                <p>Pomagamy w rozliczaniu podatków dochodowych, VAT, CIT oraz przygotowywaniu deklaracji i zeznań podatkowych.</p>
+            </div>
+            <div class="service-box">
+                <h3>Obsługa kadrowa</h3>
+                <p>Oferujemy kompleksową obsługę kadrową, w tym przygotowanie umów, listy płac, a także rozliczenia z ZUS.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja kontaktowa -->
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <div class="contact-section">
+            <div class="contact-info">
+                <h3>Nasze Biuro</h3>
+                <p>Adres: ul. Przykładowa 123, 00-000 Miasto</p>
+                <p>Email: kontakt@przyklad.pl</p>
+                <p>Telefon: +48 123 456 789</p>
+            </div>
+
+            <form action="mailto:kontakt@przyklad.pl" method="post" enctype="text/plain">
+                <h3>Formularz kontaktowy</h3>
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Adres email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Wyślij wiadomość">
+            </form>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer>
+        <p>© 2024 Usługi Prawnicze i Księgowe | Wszystkie prawa zastrzeżone</p>
+    </footer>
+</body>
+</html>
